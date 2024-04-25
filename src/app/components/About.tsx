@@ -14,7 +14,7 @@ const About = () => {
         <div className="lg:w-1/2 mt-4 lg:mt-0">
           <Image
             className="w-48 h-48 rounded-full mx-auto lg:mx-0"
-            src="/calder.png"
+            src="/personal-website/calder.png"
             alt="(Image of me could not be loaded)"
             width={200}
             height={200}

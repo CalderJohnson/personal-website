@@ -8,7 +8,7 @@ const About = () => {
       <div className="flex flex-col lg:flex-row items-center">
         <div className="lg:w-1/2 lg:pr-8">
           <p className="text-white text-lg leading-relaxed">
-            I'm Calder Johnson, an aspiring software engineer with a deep passion for technology and innovation. I have a wealth of experience in a variety of programming languages and technologies, and I'm currently avidly pursuing expertise in web development and machine learning. Check out my projects below!
+            I am Calder Johnson, an aspiring software engineer with a deep passion for technology and innovation. I have a wealth of experience in a variety of programming languages and technologies, and I am currently avidly pursuing expertise in web development and machine learning. Check out my projects below!
           </p>
         </div>
         <div className="lg:w-1/2 mt-4 lg:mt-0">

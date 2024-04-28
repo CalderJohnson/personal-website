@@ -4,19 +4,20 @@ import Project from './Project';
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="portfolio-section max-w-4xl mx-auto px-4 py-8 mt-16">
-      <h2 className="text-3xl text-white font-bold mb-4">My Projects</h2>
-      <div className="grid grid-cols-3 gap-4">
+    <div id="portfolio" className="portfolio-section max-w-4xl mx-auto px-4 py-8 mt-16 mobile:flex mobile:justify-center">
+      <h2 className="mobile:hidden text-3xl text-white font-bold mb-4">My Projects</h2>
+      <div className="md:grid md:grid-cols-3 md:gap-4">
+        <h2 className="md:hidden text-3xl text-white font-bold mb-4">My Projects</h2>
         <Project
           title="MetaAI ASRBleu Pipeline"
           thumbnail="/personal-website/seamlessM4T.png"
-          description="During my participation in the MLH Fellowship software engineering internship alternative experience, I worked under experienced MetaAI team members to construct a next generation parallelized pipeline to evaluate the performance of 27+ top ASR (automatic speech recognition) models, using the BLEU metric. "
+          description="During my participation in the MLH Fellowship, I worked under MetaAI team members to construct a next generation parallelized computational pipeline. Highly configurable and optimized for their cluster, it serves as a research tool to evaluate the performance of 27+ cutting edge ASR (automatic speech recognition) models using the BLEU metric. "
           link="https://github.com/CalderJohnson/seamless_communication/tree/implementing_eval_script/scripts/m4t/evaluate"
         />
         <Project
           title="Cleanserver"
           thumbnail="/personal-website/cleanserver.png"
-          description="In an effort to promote constructive dialog on online forums such as Discord, I implemented a finetune of googles BERT model. Cleanserver is a discord bot with my model integrated, conducting sentiment analysis on users messages and flagging those over a certain threshold of toxicity."
+          description="In an effort to promote constructive dialog on online forums such as Discord, I implemented a finetune of the Google BERT model. Cleanserver is a Discord bot with my model integrated, conducting sentiment analysis on users messages and flagging those over a certain threshold of toxicity."
           link="https://github.com/CalderJohnson/cleanserver"
         />
         <Project

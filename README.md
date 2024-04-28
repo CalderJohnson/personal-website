@@ -1,4 +1,4 @@
-My personal website!
+My corner of the internet :)
 
 Showcasing my projects, expertise, and achievements.
 

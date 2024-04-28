@@ -13,11 +13,11 @@ const About = () => {
         </div>
         <div className="lg:w-1/2 mt-4 lg:mt-0">
           <Image
-            className="w-48 h-48 rounded-full mx-auto lg:mx-0"
+            className="w-60 h-60 rounded-full mx-auto lg:mx-0"
             src="/personal-website/calder.png"
             alt="(Image of me could not be loaded)"
-            width={200}
-            height={200}
+            width={250}
+            height={250}
           />
         </div>
       </div>

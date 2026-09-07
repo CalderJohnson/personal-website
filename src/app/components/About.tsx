@@ -3,25 +3,26 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div id="about" className="about-section max-w-4xl mx-auto px-4 py-8 mt-16">
-      <h2 className="text-3xl text-white font-bold mb-4">About Me</h2> 
-      <div className="flex flex-col lg:flex-row items-center">
-        <div className="lg:w-1/2 lg:pr-8">
-          <p className="text-white text-lg leading-relaxed">
-            I am Calder Johnson, an aspiring software engineer with a deep passion for technology and innovation. I have a wealth of experience in a variety of programming languages and technologies, and I am currently avidly pursuing expertise in web development and machine learning. Check out my projects below!
+    <section id="about" className="intro-section">
+      <div className="intro-grid">
+        <div>
+          <span className="eyebrow">AI Researcher and Software Engineer</span>
+          <h1 className="page-title">Hi, I'm Calder.</h1>
+          <p className="intro-copy">
+            Modern artificial intelligence continues to rapidly transform the way we solve problems across every industry, giving us powerful operational automation and accelerated scientific discoveries. I work to develop robust, sophisticated machine learning models supporting data driven workflows and decision making, as well as software infrastructure to optimally apply AI to problems in industry, emphasizing safe and performant integration. <br></br><br></br>Currently, I am pursuing my Masters in Computer Science at the University of Waterloo where my research focuses on model explanation methods as a foundation for monitoring efficacy and alignment, supporting powerful and trustworthy AI moving forward.
           </p>
         </div>
-        <div className="lg:w-1/2 mt-4 lg:mt-0">
+        <div>
           <Image
-            className="w-60 h-60 rounded-full mx-auto lg:mx-0"
-            src="/personal-website/calder.png"
-            alt="(Image of me could not be loaded)"
-            width={250}
-            height={250}
+            className="profile-image"
+            src="/calder.JPEG"
+            alt="Calder Johnson"
+            width={260}
+            height={260}
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ShowcaseEntry } from "../../lib/content";
+import { withSiteBasePath } from "./assetPath";
 
 interface ShowcaseProps {
   entries: ShowcaseEntry[];
@@ -19,7 +20,7 @@ export default function Showcase({ entries }: ShowcaseProps) {
           <div className="showcase-image-wrap">
             <Image
               className="showcase-image"
-              src={entry.image}
+              src={withSiteBasePath(entry.image)}
               alt={entry.title}
               width={600}
               height={420}

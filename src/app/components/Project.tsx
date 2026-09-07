@@ -9,6 +9,7 @@ interface ProjectProps {
 }
 
 import Image from "next/image";
+import { withSiteBasePath } from "./assetPath";
 
 const Project = ({ title, thumbnail, description, link }: ProjectProps) => {
 
@@ -18,7 +19,7 @@ const Project = ({ title, thumbnail, description, link }: ProjectProps) => {
 
   return (
     <div className="max-w-xs rounded overflow-hidden shadow-lg bg-[#708090]" onClick={handleClick} style={{ cursor: 'pointer' }}>
-      <Image className="w-full" src={thumbnail} alt={title} width={500} height={300} />
+      <Image className="w-full" src={withSiteBasePath(thumbnail)} alt={title} width={500} height={300} />
       <div className="px-6 py-4">
         <div className="font-bold text-white text-xl mb-2">{title}</div>
         <p className="text-white text-base">{description}</p>

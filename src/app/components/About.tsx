@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { withSiteBasePath } from "./assetPath";
 
 const About = () => {
   return (
@@ -15,7 +16,7 @@ const About = () => {
         <div>
           <Image
             className="profile-image"
-            src="/calder.JPEG"
+            src={withSiteBasePath("/calder.JPEG")}
             alt="Calder Johnson"
             width={260}
             height={260}

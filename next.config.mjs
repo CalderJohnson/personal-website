@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
-    images: {
-        unoptimized: true,
-    },
+  output: 'export', // Tells Next.js to generate static HTML
+  basePath: '/personal-website', // Replaces leading '/' with your repository path
+  images: {
+    unoptimized: true, // Disables server-side image optimization
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
